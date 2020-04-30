@@ -10,6 +10,7 @@ import {AuthInterceptorService} from './auth/auth-interceptor.service';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { AntoineRComponent } from './antoine-r/antoine-r.component';
+import { BouComponent } from './bou/bou.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { AntoineRComponent } from './antoine-r/antoine-r.component';
     AppComponent,
     AuthComponent,
     AntoineRComponent,
+    BouComponent,
   ],
   imports: [
     BrowserModule,
