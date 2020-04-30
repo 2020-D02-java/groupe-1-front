@@ -1,17 +1,19 @@
-<div class="jumbotron">
-  <h1 class="display-4">Super Application</h1>
-  <ng-container *ngIf="collegueConnecte | async as col">
-    <div class="lead" *ngIf="!col.estAnonyme()">
-      <p  >Utilisateur connecté : {{col.email}}</p>
-      <p>Les rôles :</p>
-      <ul>
-        <li *ngFor="let r of col.roles">{{r}}</li>
-      </ul>
-      <button  class="btn btn-danger" (click)="seDeconnecter()">Se déconnecter</button>
+<nav class="navbar navbar-expand-lg bg-success mb-5">
 
-    </div>
-  </ng-container>
-</div>
-<main class="container">
-  <router-outlet></router-outlet>
-</main>
+  <a class="navbar-brand" style="color: whitesmoke; text-decoration: solid;">Super App!</a>
+
+
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"><a class="nav-link" routerLink="accueil" style="color: white;">Accueil</a>
+      </li>
+      <li class="nav-item"><a class="nav-link" routerLink="formulaireCollegue" style="color: white;">Ajouter
+          Collegue</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="gallerie" style="color: white;">Gallerie</a></li>
+
+      <li class="nav-item"><a class="nav-link" style="color: white;">A Propos</a></li>
+    </ul>
+  </div>
+  <main class="container">
+    <router-outlet></router-outlet>
+  </main>
