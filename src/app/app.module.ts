@@ -18,7 +18,6 @@ import { BouComponent } from './bou/bou.component';
   declarations: [
     AppComponent,
     AuthComponent,
-    TechComponent,
     SebComponentComponent,
     AntoineRComponent,
     BouComponent
