@@ -1,10 +1,10 @@
 
-import {HttpClient} from '@angular/common/http';
-import {Observable, merge, of} from 'rxjs';
-import {environment} from '../../environments/environment';
-import {flatMap} from 'rxjs/operators';
-import {BackendLink} from './tech.domains';
-import {Injectable} from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable, merge, of } from 'rxjs';
+import { environment } from '../../environments/environment';
+import { flatMap } from 'rxjs/operators';
+import { BackendLink } from './tech.domains';
+import { Injectable } from '@angular/core';
 
 /**
  * Service donnant accès aux informations techniques.
@@ -18,7 +18,7 @@ export class TechService {
 
   /**
    * Récupération d'un flux de liens techniques vers le backend
-   */
+
   listBackendLinks(): Observable<BackendLink> {
     return merge(this.http.get(`${environment.baseUrl}${environment.apiActuator}`)
       .pipe(
@@ -28,5 +28,5 @@ export class TechService {
       ), of(new BackendLink({name: 'versions', href: `${environment.baseUrl}${environment.apiVersion}`})))
       ;
   }
-
+*/
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {TechService} from './tech.service';
-import {BackendLink} from './tech.domains';
+import { TechService } from './tech.service';
+import { BackendLink } from './tech.domains';
 
 /**
  * Composant d'affichage d'informations techniques (liens utiles pour connaître l'état du backend).
@@ -19,9 +19,9 @@ export class TechComponent implements OnInit {
   constructor(private _techSrv: TechService) { }
 
   ngOnInit() {
-   this._techSrv.listBackendLinks().subscribe(
-     link => this.links.push(link)
-   );
+    /*  this._techSrv.listBackendLinks().subscribe(
+        link => this.links.push(link)
+      );*/
   }
 
 
