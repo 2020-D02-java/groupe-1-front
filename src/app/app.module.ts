@@ -9,6 +9,7 @@ import {StatutConnecteService} from './auth/statut-connecte.service';
 import {AuthInterceptorService} from './auth/auth-interceptor.service';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import { SebComponentComponent } from './seb-component/seb-component.component';
 import { AntoineRComponent } from './antoine-r/antoine-r.component';
 import { BouComponent } from './bou/bou.component';
 
@@ -17,8 +18,10 @@ import { BouComponent } from './bou/bou.component';
   declarations: [
     AppComponent,
     AuthComponent,
+    TechComponent,
+    SebComponentComponent,
     AntoineRComponent,
-    BouComponent,
+    BouComponent
   ],
   imports: [
     BrowserModule,
