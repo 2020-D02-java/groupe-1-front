@@ -1,1 +1,15 @@
-<p></p>
+<div class="jumbotron">
+  <h1 class="display-3">Jul - Dup Page ! ouai !! </h1>
+  <p class="lead">Description</p>
+  <hr class="my-2">
+  <p>Ici Vous trouverez des chaussettes, des semelles, des instruments traditionnels, et des explosions</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" role="button" (click)="afficher()" [hidden]="aff">Afficher</a>
+    <a class="btn btn-primary btn-lg" role="button" (click)="effacer()" [hidden]="!aff">Cacher</a>
+  </p>
+</div>
+<div class="col-4" *ngIf="aff">
+  <div *ngFor="let item of listImage">
+    <img src="{{item}}" alt="">
+  </div>
+</div>
